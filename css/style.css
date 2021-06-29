@@ -1,0 +1,51 @@
+.section {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.logo {
+    width: 100%;
+}
+
+#newTaskItem {
+    width: 100%;
+}
+
+.input-area button {
+    width: calc(100% - 12px);
+    margin-left: 12px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #ccc
+}
+
+.tasks-list {
+    background: #f5f7f7;
+    list-style: none;
+}
+
+.tasks-list li {
+    height: 36px;
+    margin: 0 20px;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.tasks-list li i {
+    cursor: pointer
+}
+
+.tasks-list li:hover {
+    background-color: #fff;
+}
+
+.tasks-list li:first-child {
+    margin-top: 20px;
+}
+
+.tasks-list li:last-child {
+    margin-bottom: 20px;
+}
+
