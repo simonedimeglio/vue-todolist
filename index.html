@@ -12,7 +12,48 @@
         <title>To Do List - VueJs</title>
     </head>
     <body>
-        <div id="app"></div>
+
+        <div id="app">
+
+            <!-- Bootstrap's container -->
+            <div class="container">
+
+                <!-- Logo section -->
+                <div class="row justify-content-center section">
+                    <div class="col-4">
+                        <img class="logo" src="img/logo.png" alt="Boolean Logo">
+                    </div>
+                </div>
+                
+                <!-- Input & button section -->
+                <div class="row justify-content-center input-area section">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-8 p-0">
+                                <input id="newTaskItem" v-model="newTask" @keyup.enter ="addTask" placeholder="Inserisci un nuovo task">
+                            </div>
+                           <div class="col-4 p-0">
+                                <button @click="addTask">Aggiungi</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tasks list section -->
+                <div class="row justify-content-center section">
+                    <ul class="col-8 tasks-list">
+                        <li v-for="(task, index) in toDoList">
+                            <i class="far fa-check-circle"></i> 
+                            <span>{{ task }}</span>
+                            <i class="fas fa-backspace" @click="deleteTask(index)"></i>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+        </div>
         <script src="js/script.js"></script>
+    
     </body>
 </html>
