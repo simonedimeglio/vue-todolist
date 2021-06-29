@@ -11,16 +11,30 @@
     width: 100%;
 }
 
+.zero-button {
+    width: 190px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;    
+}
+
+.zero-button i {
+    margin-right: 4px;
+}
+
 .input-area button {
     width: calc(100% - 12px);
     margin-left: 12px;
     border-radius: 5px;
-    box-shadow: 0 0 3px #ccc
+    /* TRIBUTE TO OUR TEACHER --> box-shadow: 0 0 3px #ccc; */
 }
 
 .tasks-list {
     background: #f5f7f7;
     list-style: none;
+    border-radius: 8px;
 }
 
 .tasks-list li {
@@ -30,6 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgb(173, 172, 172);
     
 }
 
